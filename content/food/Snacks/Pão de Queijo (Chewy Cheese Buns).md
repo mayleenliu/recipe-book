@@ -7,6 +7,7 @@ url: https://cooking.nytimes.com/recipes/1026391-pao-de-queijo-chewy-cheese-buns
 category: Snack
 cuisine: Brazilian
 time: "120"
+cover: https://static01.nyt.com/images/2024/12/19/multimedia/KF-Pao-de-Queijorex/VV-Cheese-Puffs-gcfz-videoSixteenByNineJumbo1600.jpg
 ---
 
 # [Pão de Queijo (Chewy Cheese Buns)](https://cooking.nytimes.com/recipes/1026391-pao-de-queijo-chewy-cheese-buns)

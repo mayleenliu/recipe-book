@@ -7,6 +7,7 @@ url: https://cooking.nytimes.com/recipes/1019631-crunchy-chickpeas-with-turmeric
 category: Snack
 cuisine: American
 time: "45"
+cover: https://static01.nyt.com/images/2018/09/28/dining/ch-chickpea-turmeric/ch-chickpea-turmeric-videoSixteenByNineJumbo1600.jpg
 ---
 
 # [Crunchy Chickpeas With Turmeric, Ginger and Pepper](https://cooking.nytimes.com/recipes/1019631-crunchy-chickpeas-with-turmeric-ginger-and-pepper)
