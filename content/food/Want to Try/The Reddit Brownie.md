@@ -7,7 +7,7 @@ category: Dessert
 cuisine: American
 rating:
 time: "60"
-cover: "[[food/Images/Reddit-brownie.jpg]]"
+cover: /food/images/reddit-brownie.jpg
 ---
 # Gooey Fudgy Brownies 
 

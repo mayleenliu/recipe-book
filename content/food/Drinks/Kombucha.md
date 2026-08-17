@@ -7,7 +7,7 @@ category: Meal
 cuisine: American
 rating:
 time:
-cover: "[[food/Images/kombucha.png]]"
+cover: /food/images/kombucha.png
 ---
 # Kombucha  
 

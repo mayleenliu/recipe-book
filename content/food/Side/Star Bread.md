@@ -7,7 +7,7 @@ category: Meal
 cuisine: American
 rating:
 time: "240"
-cover: "[[food/Images/star-bread.jpg]]"
+cover: /Food/Images/star-bread.jpg
 ---
 # Star Bread  
 
