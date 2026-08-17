@@ -6,7 +6,7 @@ VAULT_PATH="/Users/mayleenliu/Library/Mobile Documents/iCloud~md~obsidian/Docume
 rsync -avc --delete \
   --include='Food/***' \
   --include='Recipe Book.base' \
-  --include='index.base' \
+  --include='index.md' \
   --exclude='*' \
   "$VAULT_PATH/" ./content/
 
