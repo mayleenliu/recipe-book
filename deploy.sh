@@ -1,20 +1,22 @@
 #!/usr/bin/env bash
 
-# Sync only files that have actually changed (using content checksums)
+VAULT_PATH="/Users/mayleenliu/Library/Mobile Documents/iCloud~md~obsidian/Documents/YOUR_VAULT_NAME"
+
+# Copy ONLY the Food directory, Recipe Book.base, and index.base
 rsync -avc --delete \
-  --include='*.base' \
-  --include='*.md' \
-  --include='*/' \
-  --exclude='.git*' \
-  '/Users/mayleenliu/Library/Mobile Documents/iCloud~md~obsidian/Documents/Mayleen/' ./content/
+  --include='Food/***' \
+  --include='Recipe Book.base' \
+  --include='index.base' \
+  --exclude='*' \
+  "$VAULT_PATH/" ./content/
 
 # Check if there are actual git changes before committing
 if [ -n "$(git status --porcelain)" ]; then
   echo "Changes detected, committing and pushing..."
   git add .
-  git commit -m "Update recipes and sync .base files"
+  git commit -m "Sync recipes and base files only"
   git pull origin main --rebase
   git push origin main
 else
-  echo "No content changes detected. Nothing to push!"
+  echo "No changes detected. Nothing to push!"
 fi
