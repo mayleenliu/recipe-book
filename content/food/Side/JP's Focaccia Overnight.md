@@ -7,7 +7,7 @@ category: Side
 cuisine: Italian
 rating:
 time: "300"
-cover:
+cover: "[[food/images/focaccia.png]]"
 ---
 # Ingredients
 
