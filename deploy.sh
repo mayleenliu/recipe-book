@@ -9,7 +9,7 @@ rm -rf ./content/content
 # 2. Sync Food folder, .base files, and index.md from vault
 rsync -avc --delete \
   --include='Food/***' \
-  --include='*.base' \
+  --include='Recipe Book.base' \
   --include='index.md' \
   --exclude='*' \
   "$VAULT_PATH/" ./content/
