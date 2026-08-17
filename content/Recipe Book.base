@@ -6,7 +6,7 @@ views:
         - file.inFolder("food/Meal")
         - '!file.name.contains("index")'
         - '!file.name.contains("404")'
-        - '!file.inFolder("Food/images")'
+        - '!file.inFolder("Food/Images")'
     order:
       - file.name
     image: note.cover
@@ -19,7 +19,7 @@ views:
         - file.inFolder("food/Dessert")
         - '!file.name.contains("index")'
         - '!file.name.contains("404")'
-        - '!file.inFolder("food/images")'
+        - '!file.inFolder("Food/Images")'
     order:
       - file.name
     image: note.cover
@@ -32,7 +32,7 @@ views:
         - file.inFolder("food/Side")
         - '!file.name.contains("index")'
         - '!file.name.contains("404")'
-        - '!file.inFolder("food/images")'
+        - '!file.inFolder("Food/Images")'
     order:
       - file.name
     image: note.cover
@@ -45,7 +45,7 @@ views:
         - file.inFolder("food/Drinks")
         - '!file.name.contains("index")'
         - '!file.name.contains("404")'
-        - '!file.inFolder("food/images")'
+        - '!file.inFolder("Food/Images")'
     order:
       - file.name
     image: note.cover
@@ -55,10 +55,10 @@ views:
     name: Snacks
     filters:
       and:
-        - file.inFolder("food/Snack")
+        - file.inFolder("food/Snacks")
         - '!file.name.contains("index")'
         - '!file.name.contains("404")'
-        - '!file.inFolder("food/images")'
+        - '!file.inFolder("Food/Images")'
     order:
       - file.name
     image: note.cover
@@ -71,7 +71,7 @@ views:
         - file.inFolder("food/Want to Try")
         - '!file.name.contains("index")'
         - '!file.name.contains("404")'
-        - '!file.inFolder("food/images")'
+        - '!file.inFolder("Food/Images")'
     order:
       - file.name
     image: note.cover

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Set your exact Obsidian vault path (update YOUR_VAULT_NAME)
-VAULT_PATH="/Users/mayleenliu/Library/Mobile Documents/iCloud~md~obsidian/Documents/YOUR_VAULT_NAME"
+VAULT_PATH="/Users/mayleenliu/Library/Mobile Documents/iCloud~md~obsidian/Documents/Mayleen"
 
 # 1. Force removal of accidental duplicate or nested folders
 rm -rf ./content/content
@@ -39,7 +39,7 @@ fi
 if [ -n "$(git status --porcelain)" ]; then
   echo "Changes detected, committing and pushing..."
   git add .
-  git commit -m "Sync recipes, exclude Library.base, and clean up folders"
+  git commit -m "Sync recipes"
   git pull origin main --rebase
   git push origin main
 else
