@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-VAULT_PATH="/Users/mayleenliu/Library/Mobile Documents/iCloud~md~obsidian/Documents/YOUR_VAULT_NAME"
+VAULT_PATH="/Users/mayleenliu/Library/Mobile Documents/iCloud~md~obsidian/Documents/Mayleen"
 
 # Copy ONLY the Food directory, Recipe Book.base, and index.base
 rsync -avc --delete \
