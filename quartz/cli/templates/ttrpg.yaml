@@ -9,7 +9,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: mayleenliu.github.io/recipe-book
+  baseUrl: mayleenliu.github.io/recipes
   ignorePatterns:
     - private
     - templates

@@ -11,7 +11,7 @@ on:
 
 jobs:
   build-and-test:
-    if: ${{ github.repository == 'mayleenliu/recipe-book' }}
+    if: ${{ github.repository == 'mayleenliu/recipes' }}
     strategy:
       matrix:
         os: [windows-latest, macos-latest, ubuntu-latest]
