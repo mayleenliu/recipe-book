@@ -1,3 +1,7 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+.bases-cards {
+	grid-template-columns: repeat(auto-fill, minmax(min(160px, 100%), 1fr)) !important;
+}
