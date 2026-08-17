@@ -1,9 +1,19 @@
 #!/usr/bin/env bash
 
-# Copy files from your vault to content
-rsync -av --delete --exclude='.git*' '/Users/mayleenliu/Library/Mobile Documents/iCloud~md~obsidian/Documents/Mayleen/Food/' ./content/
+# 1. Copy markdown AND .base files from your Obsidian Vault into Quartz content
+rsync -av --delete \
+  --include='*.base' \
+  --include='*.md' \
+  --include='*/' \
+  --exclude='.git*' \
+  '/Users/mayleenliu/Library/Mobile Documents/iCloud~md~obsidian/Documents/Mayleen/' ./content/
 
-# Push changes to GitHub
-git add content/
-git commit -m "Update recipe content"
+# 2. Stage all changes (including .base files)
+git add .
+
+# 3. Commit
+git commit -m "Update recipes and sync .base files"
+
+# 4. Sync remote and push
+git pull origin main --rebase
 git push origin main
