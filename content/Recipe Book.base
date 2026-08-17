@@ -1,0 +1,84 @@
+views:
+  - type: cards
+    name: Meals
+    filters:
+      and:
+        - file.inFolder("Food/Meal")
+        - '!file.name.contains("index")'
+        - '!file.name.contains("404")'
+        - '!file.inFolder("Food/Images")'
+    order:
+      - file.name
+    image: note.cover
+    imageAspectRatio: 1
+    cardSize: 160
+
+  - type: cards
+    name: Desserts
+    filters:
+      and:
+        - file.inFolder("Food/Dessert")
+        - '!file.name.contains("index")'
+        - '!file.name.contains("404")'
+        - '!file.inFolder("Food/Images")'
+    order:
+      - file.name
+    image: note.cover
+    imageAspectRatio: 1
+    cardSize: 160
+
+  - type: cards
+    name: Sides
+    filters:
+      and:
+        - file.inFolder("Food/Side")
+        - '!file.name.contains("index")'
+        - '!file.name.contains("404")'
+        - '!file.inFolder("Food/Images")'
+    order:
+      - file.name
+    image: note.cover
+    imageAspectRatio: 1
+    cardSize: 160
+
+  - type: cards
+    name: Drinks
+    filters:
+      and:
+        - file.inFolder("Food/Drinks")
+        - '!file.name.contains("index")'
+        - '!file.name.contains("404")'
+        - '!file.inFolder("Food/Images")'
+    order:
+      - file.name
+    image: note.cover
+    imageAspectRatio: 1
+    cardSize: 160
+
+  - type: cards
+    name: Snacks
+    filters:
+      and:
+        - file.inFolder("Food/Snack")
+        - '!file.name.contains("index")'
+        - '!file.name.contains("404")'
+        - '!file.inFolder("Food/Images")'
+    order:
+      - file.name
+    image: note.cover
+    imageAspectRatio: 1
+    cardSize: 160
+
+  - type: cards
+    name: Want to Try
+    filters:
+      and:
+        - file.inFolder("Food/Want to Try")
+        - '!file.name.contains("index")'
+        - '!file.name.contains("404")'
+        - '!file.inFolder("Food/Images")'
+    order:
+      - file.name
+    image: note.cover
+    imageAspectRatio: 1
+    cardSize: 160
