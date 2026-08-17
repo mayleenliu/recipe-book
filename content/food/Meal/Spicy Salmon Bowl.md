@@ -7,7 +7,7 @@ category: Meal
 cuisine: American
 rating:
 time: "60"
-cover: /food/images/spicy-salmon-bowl.jpg
+cover: "[[food/Images/spicy-salmon-bowl.jpg]]"
 ---
 
 # [Spicy Salmon Bowl](https://www.fufuskitchen.com/spicy-salmon-bowl/)

@@ -7,7 +7,7 @@ category: Dessert
 cuisine: American
 rating:
 time: "60"
-cover: /food/images/matcha-cookies.jpg
+cover: "[[food/Images/matcha-cookies.jpg]]"
 ---
 # Brown Butter Matcha Cookie
 

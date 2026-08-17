@@ -7,7 +7,7 @@ category: Meal
 cuisine: Chinese
 rating:
 time: "60"
-cover: /food/images/dumpling.jpeg
+cover: "[[food/Images/dumpling.jpeg]]"
 ---
 # Dumpling 
 
