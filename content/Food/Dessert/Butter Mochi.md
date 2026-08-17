@@ -7,7 +7,7 @@ category: Dessert
 cuisine: American
 rating:
 time: "60"
-cover: /Food/Images/butter-mochi.jpeg
+cover: /food/images/butter-mochi.jpeg
 ---
 Butter Mochi
 

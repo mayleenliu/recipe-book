@@ -6,7 +6,7 @@ author: Carolina Gomez
 url: https://bluntcook.com/thai-peanut-chicken-bowl/
 cuisine: Asian
 time: "60"
-cover: /Food/Images/thai-peanut-chicken-bowl.jpg
+cover: /food/images/thai-peanut-chicken-bowl.jpg
 category: Meal
 ---
 

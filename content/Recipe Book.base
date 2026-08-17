@@ -3,10 +3,10 @@ views:
     name: Meals
     filters:
       and:
-        - file.inFolder("Food/Meal")
+        - file.inFolder("food/Meal")
         - '!file.name.contains("index")'
         - '!file.name.contains("404")'
-        - '!file.inFolder("Food/Images")'
+        - '!file.inFolder("Food/images")'
     order:
       - file.name
     image: note.cover
@@ -16,10 +16,10 @@ views:
     name: Desserts
     filters:
       and:
-        - file.inFolder("Food/Dessert")
+        - file.inFolder("food/Dessert")
         - '!file.name.contains("index")'
         - '!file.name.contains("404")'
-        - '!file.inFolder("Food/Images")'
+        - '!file.inFolder("food/images")'
     order:
       - file.name
     image: note.cover
@@ -29,10 +29,10 @@ views:
     name: Sides
     filters:
       and:
-        - file.inFolder("Food/Side")
+        - file.inFolder("food/Side")
         - '!file.name.contains("index")'
         - '!file.name.contains("404")'
-        - '!file.inFolder("Food/Images")'
+        - '!file.inFolder("food/images")'
     order:
       - file.name
     image: note.cover
@@ -42,10 +42,10 @@ views:
     name: Drinks
     filters:
       and:
-        - file.inFolder("Food/Drinks")
+        - file.inFolder("food/Drinks")
         - '!file.name.contains("index")'
         - '!file.name.contains("404")'
-        - '!file.inFolder("Food/Images")'
+        - '!file.inFolder("food/images")'
     order:
       - file.name
     image: note.cover
@@ -55,10 +55,10 @@ views:
     name: Snacks
     filters:
       and:
-        - file.inFolder("Food/Snack")
+        - file.inFolder("food/Snack")
         - '!file.name.contains("index")'
         - '!file.name.contains("404")'
-        - '!file.inFolder("Food/Images")'
+        - '!file.inFolder("food/images")'
     order:
       - file.name
     image: note.cover
@@ -68,10 +68,10 @@ views:
     name: Want to Try
     filters:
       and:
-        - file.inFolder("Food/Want to Try")
+        - file.inFolder("food/Want to Try")
         - '!file.name.contains("index")'
         - '!file.name.contains("404")'
-        - '!file.inFolder("Food/Images")'
+        - '!file.inFolder("food/images")'
     order:
       - file.name
     image: note.cover

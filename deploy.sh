@@ -1,38 +1,45 @@
 #!/usr/bin/env bash
 
-# Set your Obsidian vault path (update YOUR_VAULT_NAME)
-VAULT_PATH="/Users/mayleenliu/Library/Mobile Documents/iCloud~md~obsidian/Documents/Mayleen"
+# Set your exact Obsidian vault path (update YOUR_VAULT_NAME)
+VAULT_PATH="/Users/mayleenliu/Library/Mobile Documents/iCloud~md~obsidian/Documents/YOUR_VAULT_NAME"
 
-# 1. Clean up accidental nested folders if they exist
+# 1. Force removal of accidental duplicate or nested folders
 rm -rf ./content/content
+rm -rf "./content/Food 2"
+rm -f ./content/Library.base
 
-# 2. Sync Food folder, .base files, and index.md from vault
+# 2. Sync Food directory, base files, and images (EXCLUDING Library.base)
 rsync -avc --delete \
+  --exclude='Library.base' \
+  --exclude='Library.base.md' \
   --include='Food/***' \
-  --include='Recipe Book.base' \
+  --include='*.png' \
+  --include='*.jpg' \
+  --include='*.jpeg' \
+  --include='*.gif' \
+  --include='*.webp' \
+  --include='*.base' \
   --include='index.md' \
   --exclude='*' \
   "$VAULT_PATH/" ./content/
 
-# 3. Fallback: If no index.md was synced from vault, create one automatically
+# 3. Ensure root index.md homepage exists
 if [ ! -f "./content/index.md" ]; then
-  echo "No index.md found in vault root. Creating default content/index.md..."
+  echo "Creating default content/index.md..."
   cat << 'EOF' > ./content/index.md
 ---
 title: Recipe Book
 ---
 
-Welcome to my recipe collection!
-
 ![[Recipe Book.base]]
 EOF
 fi
 
-# 4. Commit and Push changes
+# 4. Push updates to GitHub
 if [ -n "$(git status --porcelain)" ]; then
   echo "Changes detected, committing and pushing..."
   git add .
-  git commit -m "Ensure index.md exists and sync recipes"
+  git commit -m "Sync recipes, exclude Library.base, and clean up folders"
   git pull origin main --rebase
   git push origin main
 else
