@@ -2,7 +2,7 @@
 # Template: blog
 # A blog-focused setup with recent notes and comments enabled.
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: Recipes
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true

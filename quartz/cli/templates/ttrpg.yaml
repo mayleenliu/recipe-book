@@ -2,7 +2,7 @@
 # Template: ttrpg
 # Obsidian-based setup with map plugin and ITS Theme for TTRPG/D&D wikis.
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: Qecipes
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
