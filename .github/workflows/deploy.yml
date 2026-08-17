@@ -4,7 +4,12 @@ on:
   push:
     branches:
       - main
- 
+    paths-ignore:
+      - 'deploy.sh'
+      - 'README.md'
+      - '.gitignore'
+      - '.github/**'
+      
 permissions:
   contents: read
   pages: write
@@ -49,6 +54,9 @@ jobs:
         with:
           path: public
  
+          on:
+
+
   deploy:
     needs: build
     environment:
